@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.plans {
+    background-color: v.$secondary;
+
+    &Heading {
+        @include m.headingBorder(v.$white, v.$primary);
+    }
+
+    &Text {
+        color: v.$white;
+    }
+}
