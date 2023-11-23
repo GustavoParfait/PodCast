@@ -40,8 +40,6 @@
 
     @include tablet {
         width: auto;
-        display: inline-block;
-        
     }
 }
 
@@ -57,6 +55,13 @@
     background-size: cover;
     background-position: top center;
 
+}
+
+@mixin iconBg($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 2rem;
+    background-size: 10rem;
 }
 
 @mixin headingBorder($colorText, $colorLine) {
