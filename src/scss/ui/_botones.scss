@@ -6,7 +6,7 @@
 }
 
 .ourPlansButton {
-    @include m.button(v.$primary, v.$secondary);
+    @extend .headerButton;
     border: 2px solid v.$white;
     margin-top: 2rem;
     display: block;
